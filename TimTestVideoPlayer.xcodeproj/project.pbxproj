@@ -14,10 +14,17 @@
 		BA1753242853BDEF0087BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1753222853BDEF0087BB3A /* LaunchScreen.storyboard */; };
 		BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */; };
 		BA1753302853BE650087BB3A /* TAHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17532F2853BE650087BB3A /* TAHomeScreenViewController.swift */; };
+		BA1753382853C2470087BB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753372853C2470087BB3A /* AppDelegate.swift */; };
+		BA17533A2853C2470087BB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753392853C2470087BB3A /* ViewController.swift */; };
+		BA17533D2853C2470087BB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17533B2853C2470087BB3A /* Main.storyboard */; };
+		BA17533F2853C2480087BB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA17533E2853C2480087BB3A /* Assets.xcassets */; };
+		BA1753422853C2480087BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1753402853C2480087BB3A /* LaunchScreen.storyboard */; };
+		BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */; };
+		BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA1753142853BDEF0087BB3A /* TimTestVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimTestVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1753142853BDEF0087BB3A /* TimTestVideoPlayer-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimTestVideoPlayer-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1753172853BDEF0087BB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1753192853BDEF0087BB3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA17531E2853BDEF0087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,10 +33,25 @@
 		BA1753252853BDEF0087BB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
 		BA17532F2853BE650087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
+		BA1753352853C2470087BB3A /* TimTestVideoPlayer-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimTestVideoPlayer-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1753372853C2470087BB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA1753392853C2470087BB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA17533C2853C2470087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA17533E2853C2480087BB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA1753412853C2480087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
+		BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BA1753112853BDEF0087BB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1753322853C2470087BB3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +64,8 @@
 		BA17530B2853BDEE0087BB3A = {
 			isa = PBXGroup;
 			children = (
-				BA1753162853BDEF0087BB3A /* TimTestVideoPlayer */,
+				BA1753162853BDEF0087BB3A /* TimTestVideoPlayer-iOS */,
+				BA1753362853C2470087BB3A /* TimTestVideoPlayer-tvOS */,
 				BA1753152853BDEF0087BB3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +73,13 @@
 		BA1753152853BDEF0087BB3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA1753142853BDEF0087BB3A /* TimTestVideoPlayer.app */,
+				BA1753142853BDEF0087BB3A /* TimTestVideoPlayer-iOS.app */,
+				BA1753352853C2470087BB3A /* TimTestVideoPlayer-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA1753162853BDEF0087BB3A /* TimTestVideoPlayer */ = {
+		BA1753162853BDEF0087BB3A /* TimTestVideoPlayer-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				BA17532E2853BE420087BB3A /* Home */,
@@ -67,7 +91,7 @@
 				BA1753222853BDEF0087BB3A /* LaunchScreen.storyboard */,
 				BA1753252853BDEF0087BB3A /* Info.plist */,
 			);
-			path = TimTestVideoPlayer;
+			path = "TimTestVideoPlayer-iOS";
 			sourceTree = "<group>";
 		};
 		BA17532B2853BE270087BB3A /* Player */ = {
@@ -86,12 +110,42 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		BA1753362853C2470087BB3A /* TimTestVideoPlayer-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA1753492853C3CA0087BB3A /* Home */,
+				BA1753462853C3730087BB3A /* Player */,
+				BA1753372853C2470087BB3A /* AppDelegate.swift */,
+				BA1753392853C2470087BB3A /* ViewController.swift */,
+				BA17533B2853C2470087BB3A /* Main.storyboard */,
+				BA17533E2853C2480087BB3A /* Assets.xcassets */,
+				BA1753402853C2480087BB3A /* LaunchScreen.storyboard */,
+			);
+			path = "TimTestVideoPlayer-tvOS";
+			sourceTree = "<group>";
+		};
+		BA1753462853C3730087BB3A /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		BA1753492853C3CA0087BB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA1753132853BDEF0087BB3A /* TimTestVideoPlayer */ = {
+		BA1753132853BDEF0087BB3A /* TimTestVideoPlayer-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA1753282853BDEF0087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer" */;
+			buildConfigurationList = BA1753282853BDEF0087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer-iOS" */;
 			buildPhases = (
 				BA1753102853BDEF0087BB3A /* Sources */,
 				BA1753112853BDEF0087BB3A /* Frameworks */,
@@ -101,9 +155,26 @@
 			);
 			dependencies = (
 			);
-			name = TimTestVideoPlayer;
+			name = "TimTestVideoPlayer-iOS";
 			productName = TimTestVideoPlayer;
-			productReference = BA1753142853BDEF0087BB3A /* TimTestVideoPlayer.app */;
+			productReference = BA1753142853BDEF0087BB3A /* TimTestVideoPlayer-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA1753342853C2470087BB3A /* TimTestVideoPlayer-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA1753432853C2480087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer-tvOS" */;
+			buildPhases = (
+				BA1753312853C2470087BB3A /* Sources */,
+				BA1753322853C2470087BB3A /* Frameworks */,
+				BA1753332853C2470087BB3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TimTestVideoPlayer-tvOS";
+			productName = "TimTestVideoPlayer-tvOS";
+			productReference = BA1753352853C2470087BB3A /* TimTestVideoPlayer-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,6 +188,9 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					BA1753132853BDEF0087BB3A = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					BA1753342853C2470087BB3A = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -134,7 +208,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BA1753132853BDEF0087BB3A /* TimTestVideoPlayer */,
+				BA1753132853BDEF0087BB3A /* TimTestVideoPlayer-iOS */,
+				BA1753342853C2470087BB3A /* TimTestVideoPlayer-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +225,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA1753332853C2470087BB3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1753422853C2480087BB3A /* LaunchScreen.storyboard in Resources */,
+				BA17533F2853C2480087BB3A /* Assets.xcassets in Resources */,
+				BA17533D2853C2470087BB3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -161,6 +246,17 @@
 				BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */,
 				BA1753182853BDEF0087BB3A /* AppDelegate.swift in Sources */,
 				BA17531A2853BDEF0087BB3A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA1753312853C2470087BB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */,
+				BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */,
+				BA17533A2853C2470087BB3A /* ViewController.swift in Sources */,
+				BA1753382853C2470087BB3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +275,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				BA1753232853BDEF0087BB3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BA17533B2853C2470087BB3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA17533C2853C2470087BB3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA1753402853C2480087BB3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA1753412853C2480087BB3A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -356,6 +468,60 @@
 			};
 			name = Release;
 		};
+		BA1753442853C2480087BB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZD94BR25U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ta.TimTestVideoPlayer-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		BA1753452853C2480087BB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZD94BR25U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ta.TimTestVideoPlayer-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -368,11 +534,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA1753282853BDEF0087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer" */ = {
+		BA1753282853BDEF0087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BA1753292853BDEF0087BB3A /* Debug */,
 				BA17532A2853BDEF0087BB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA1753432853C2480087BB3A /* Build configuration list for PBXNativeTarget "TimTestVideoPlayer-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA1753442853C2480087BB3A /* Debug */,
+				BA1753452853C2480087BB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
