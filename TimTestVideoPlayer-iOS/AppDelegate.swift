@@ -8,15 +8,37 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, TAApplication {
+    var ipAddressV4: String? = String()
+    var isInitialLaunch: Bool = true
+    
+    var delegate: TADelegateMulticast<TAApplicationDelegate> = TADelegateMulticast<TAApplicationDelegate>()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
+    func applicationWillResignActive(_ application: UIApplication) {
+        delegate.invoke({ $0.applicationWillResignActive() })
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        delegate.invoke({ $0.applicationDidEnterBackground() })
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        delegate.invoke({ $0.applicationWillEnterForeground() })
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        delegate.invoke({ $0.applicationDidBecomeActive() })
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        delegate.invoke({ $0.applicationWillTerminate() })
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

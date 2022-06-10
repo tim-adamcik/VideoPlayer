@@ -21,6 +21,12 @@
 		BA1753422853C2480087BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1753402853C2480087BB3A /* LaunchScreen.storyboard */; };
 		BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */; };
 		BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */; };
+		BA419BE52853EA95008566B0 /* TAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE42853EA95008566B0 /* TAAppDelegate.swift */; };
+		BA419BE62853EA95008566B0 /* TAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE42853EA95008566B0 /* TAAppDelegate.swift */; };
+		BA419BE82853EB52008566B0 /* TAApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE72853EB52008566B0 /* TAApplication.swift */; };
+		BA419BE92853EB52008566B0 /* TAApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE72853EB52008566B0 /* TAApplication.swift */; };
+		BA419BEC2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BEB2853EBCE008566B0 /* UIApplication+Extensions.swift */; };
+		BA419BED2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BEB2853EBCE008566B0 /* UIApplication+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,9 @@
 		BA1753412853C2480087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
 		BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
+		BA419BE42853EA95008566B0 /* TAAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAppDelegate.swift; sourceTree = "<group>"; };
+		BA419BE72853EB52008566B0 /* TAApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAApplication.swift; sourceTree = "<group>"; };
+		BA419BEB2853EBCE008566B0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		BA7B5D8F2853CBDF0032DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +74,7 @@
 		BA17530B2853BDEE0087BB3A = {
 			isa = PBXGroup;
 			children = (
+				BA419BE32853EA7A008566B0 /* Shared */,
 				BA1753162853BDEF0087BB3A /* TimTestVideoPlayer-iOS */,
 				BA1753362853C2470087BB3A /* TimTestVideoPlayer-tvOS */,
 				BA1753152853BDEF0087BB3A /* Products */,
@@ -140,6 +150,24 @@
 				BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BA419BE32853EA7A008566B0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA419BEA2853EBBD008566B0 /* Extensions */,
+				BA419BE42853EA95008566B0 /* TAAppDelegate.swift */,
+				BA419BE72853EB52008566B0 /* TAApplication.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BA419BEA2853EBBD008566B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA419BEB2853EBCE008566B0 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA419BEC2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */,
 				BA1753302853BE650087BB3A /* TAHomeScreenViewController.swift in Sources */,
+				BA419BE82853EB52008566B0 /* TAApplication.swift in Sources */,
 				BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */,
 				BA1753182853BDEF0087BB3A /* AppDelegate.swift in Sources */,
+				BA419BE52853EA95008566B0 /* TAAppDelegate.swift in Sources */,
 				BA17531A2853BDEF0087BB3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA419BED2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */,
 				BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */,
+				BA419BE92853EB52008566B0 /* TAApplication.swift in Sources */,
 				BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */,
 				BA17533A2853C2470087BB3A /* ViewController.swift in Sources */,
+				BA419BE62853EA95008566B0 /* TAAppDelegate.swift in Sources */,
 				BA1753382853C2470087BB3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
