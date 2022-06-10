@@ -41,6 +41,7 @@
 		BA1753412853C2480087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
 		BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
+		BA7B5D8F2853CBDF0032DD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		BA1753362853C2470087BB3A /* TimTestVideoPlayer-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA7B5D8F2853CBDF0032DD64 /* Info.plist */,
 				BA1753492853C3CA0087BB3A /* Home */,
 				BA1753462853C3730087BB3A /* Player */,
 				BA1753372853C2470087BB3A /* AppDelegate.swift */,
@@ -421,7 +423,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD94BR25U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TimTestVideoPlayer/Info.plist;
+				INFOPLIST_FILE = "TimTestVideoPlayer-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,7 +451,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD94BR25U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TimTestVideoPlayer/Info.plist;
+				INFOPLIST_FILE = "TimTestVideoPlayer-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -477,6 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD94BR25U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TimTestVideoPlayer-tvOS/Info.plist";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
@@ -504,6 +507,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD94BR25U;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TimTestVideoPlayer-tvOS/Info.plist";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
