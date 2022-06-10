@@ -57,6 +57,7 @@ class TAPlayerViewController: AVPlayerViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         player = AVPlayer()
+        setupPlayback()
     }
     
     override func viewWillDisappear(_ animated: Bool) {

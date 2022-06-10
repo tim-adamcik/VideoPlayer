@@ -27,6 +27,21 @@ class TAHomeScreenViewController: UIViewController {
             return
         }
         
+        present(playerController: playerController)
+        
+    }
+        
+    private func present(playerController: TAPlayerViewController) {
+        if let navigationController: UINavigationController = navigationController {
+            navigationController.pushViewController(playerController, animated: true)
+        }
+        else {
+            playerController.modalPresentationStyle = .fullScreen
+            present(playerController, animated: true)
+        }
+    }
+    
+    private func playAppleTest() {
         guard let url = URL(string: "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8") else { return }
 
         // Create an AVPlayer, passing it the HTTP Live Streaming URL.
@@ -39,17 +54,6 @@ class TAHomeScreenViewController: UIViewController {
         // Modally present the player and call the player's play() method when complete.
         present(controller, animated: true) {
             player.play()
-        }
-        
-    }
-        
-    private func present(playerController: TAPlayerViewController) {
-        if let navigationController: UINavigationController = navigationController {
-            navigationController.pushViewController(playerController, animated: true)
-        }
-        else {
-            playerController.modalPresentationStyle = .fullScreen
-            present(playerController, animated: true)
         }
     }
     
