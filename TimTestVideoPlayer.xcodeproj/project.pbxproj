@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BA1753182853BDEF0087BB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753172853BDEF0087BB3A /* AppDelegate.swift */; };
 		BA17531A2853BDEF0087BB3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753192853BDEF0087BB3A /* SceneDelegate.swift */; };
-		BA17531C2853BDEF0087BB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17531B2853BDEF0087BB3A /* ViewController.swift */; };
 		BA17531F2853BDEF0087BB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA17531D2853BDEF0087BB3A /* Main.storyboard */; };
 		BA1753212853BDEF0087BB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1753202853BDEF0087BB3A /* Assets.xcassets */; };
 		BA1753242853BDEF0087BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1753222853BDEF0087BB3A /* LaunchScreen.storyboard */; };
+		BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */; };
+		BA1753302853BE650087BB3A /* TAHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17532F2853BE650087BB3A /* TAHomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA1753142853BDEF0087BB3A /* TimTestVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimTestVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1753172853BDEF0087BB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1753192853BDEF0087BB3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA17531B2853BDEF0087BB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA17531E2853BDEF0087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA1753202853BDEF0087BB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1753232853BDEF0087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1753252853BDEF0087BB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
+		BA17532F2853BE650087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		BA1753162853BDEF0087BB3A /* TimTestVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				BA17532E2853BE420087BB3A /* Home */,
+				BA17532B2853BE270087BB3A /* Player */,
 				BA1753172853BDEF0087BB3A /* AppDelegate.swift */,
 				BA1753192853BDEF0087BB3A /* SceneDelegate.swift */,
-				BA17531B2853BDEF0087BB3A /* ViewController.swift */,
 				BA17531D2853BDEF0087BB3A /* Main.storyboard */,
 				BA1753202853BDEF0087BB3A /* Assets.xcassets */,
 				BA1753222853BDEF0087BB3A /* LaunchScreen.storyboard */,
 				BA1753252853BDEF0087BB3A /* Info.plist */,
 			);
 			path = TimTestVideoPlayer;
+			sourceTree = "<group>";
+		};
+		BA17532B2853BE270087BB3A /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		BA17532E2853BE420087BB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA17532F2853BE650087BB3A /* TAHomeScreenViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA17531C2853BDEF0087BB3A /* ViewController.swift in Sources */,
+				BA1753302853BE650087BB3A /* TAHomeScreenViewController.swift in Sources */,
+				BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */,
 				BA1753182853BDEF0087BB3A /* AppDelegate.swift in Sources */,
 				BA17531A2853BDEF0087BB3A /* SceneDelegate.swift in Sources */,
 			);
