@@ -21,6 +21,8 @@
 		BA1753422853C2480087BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1753402853C2480087BB3A /* LaunchScreen.storyboard */; };
 		BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */; };
 		BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */; };
+		BA24E26328622E4C0049BFF6 /* TACustomizedPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24E26228622E4C0049BFF6 /* TACustomizedPlayerViewController.swift */; };
+		BA24E26628622E620049BFF6 /* TACustomizedPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24E26528622E620049BFF6 /* TACustomizedPlayerViewController.swift */; };
 		BA419BE52853EA95008566B0 /* TAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE42853EA95008566B0 /* TAAppDelegate.swift */; };
 		BA419BE62853EA95008566B0 /* TAAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE42853EA95008566B0 /* TAAppDelegate.swift */; };
 		BA419BE82853EB52008566B0 /* TAApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA419BE72853EB52008566B0 /* TAApplication.swift */; };
@@ -47,6 +49,8 @@
 		BA1753412853C2480087BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPlayerViewController.swift; sourceTree = "<group>"; };
 		BA17534A2853C3D90087BB3A /* TAHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeScreenViewController.swift; sourceTree = "<group>"; };
+		BA24E26228622E4C0049BFF6 /* TACustomizedPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACustomizedPlayerViewController.swift; sourceTree = "<group>"; };
+		BA24E26528622E620049BFF6 /* TACustomizedPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACustomizedPlayerViewController.swift; sourceTree = "<group>"; };
 		BA419BE42853EA95008566B0 /* TAAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAppDelegate.swift; sourceTree = "<group>"; };
 		BA419BE72853EB52008566B0 /* TAApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAApplication.swift; sourceTree = "<group>"; };
 		BA419BEB2853EBCE008566B0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BA17532E2853BE420087BB3A /* Home */,
-				BA17532B2853BE270087BB3A /* Player */,
+				BA17532B2853BE270087BB3A /* Players */,
 				BA1753172853BDEF0087BB3A /* AppDelegate.swift */,
 				BA1753192853BDEF0087BB3A /* SceneDelegate.swift */,
 				BA17531D2853BDEF0087BB3A /* Main.storyboard */,
@@ -105,12 +109,13 @@
 			path = "TimTestVideoPlayer-iOS";
 			sourceTree = "<group>";
 		};
-		BA17532B2853BE270087BB3A /* Player */ = {
+		BA17532B2853BE270087BB3A /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				BA24E26128622E040049BFF6 /* Custom */,
 				BA17532C2853BE390087BB3A /* TAPlayerViewController.swift */,
 			);
-			path = Player;
+			path = Players;
 			sourceTree = "<group>";
 		};
 		BA17532E2853BE420087BB3A /* Home */ = {
@@ -126,7 +131,7 @@
 			children = (
 				BA7B5D8F2853CBDF0032DD64 /* Info.plist */,
 				BA1753492853C3CA0087BB3A /* Home */,
-				BA1753462853C3730087BB3A /* Player */,
+				BA1753462853C3730087BB3A /* Players */,
 				BA1753372853C2470087BB3A /* AppDelegate.swift */,
 				BA1753392853C2470087BB3A /* ViewController.swift */,
 				BA17533B2853C2470087BB3A /* Main.storyboard */,
@@ -136,12 +141,13 @@
 			path = "TimTestVideoPlayer-tvOS";
 			sourceTree = "<group>";
 		};
-		BA1753462853C3730087BB3A /* Player */ = {
+		BA1753462853C3730087BB3A /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				BA24E26428622E550049BFF6 /* Custom */,
 				BA1753472853C38C0087BB3A /* TAPlayerViewController.swift */,
 			);
-			path = Player;
+			path = Players;
 			sourceTree = "<group>";
 		};
 		BA1753492853C3CA0087BB3A /* Home */ = {
@@ -152,12 +158,36 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		BA24E26128622E040049BFF6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BA24E26228622E4C0049BFF6 /* TACustomizedPlayerViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BA24E26428622E550049BFF6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BA24E26528622E620049BFF6 /* TACustomizedPlayerViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BA24E26B28624E3D0049BFF6 /* TAAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA419BE72853EB52008566B0 /* TAApplication.swift */,
+				BA419BE42853EA95008566B0 /* TAAppDelegate.swift */,
+			);
+			path = TAAppDelegate;
+			sourceTree = "<group>";
+		};
 		BA419BE32853EA7A008566B0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA24E26B28624E3D0049BFF6 /* TAAppDelegate */,
 				BA419BEA2853EBBD008566B0 /* Extensions */,
-				BA419BE42853EA95008566B0 /* TAAppDelegate.swift */,
-				BA419BE72853EB52008566B0 /* TAApplication.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -273,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA419BEC2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */,
+				BA24E26328622E4C0049BFF6 /* TACustomizedPlayerViewController.swift in Sources */,
 				BA1753302853BE650087BB3A /* TAHomeScreenViewController.swift in Sources */,
 				BA419BE82853EB52008566B0 /* TAApplication.swift in Sources */,
 				BA17532D2853BE390087BB3A /* TAPlayerViewController.swift in Sources */,
@@ -287,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA419BED2853EBCE008566B0 /* UIApplication+Extensions.swift in Sources */,
+				BA24E26628622E620049BFF6 /* TACustomizedPlayerViewController.swift in Sources */,
 				BA17534B2853C3D90087BB3A /* TAHomeScreenViewController.swift in Sources */,
 				BA419BE92853EB52008566B0 /* TAApplication.swift in Sources */,
 				BA1753482853C38C0087BB3A /* TAPlayerViewController.swift in Sources */,
